@@ -5,25 +5,25 @@
 
 2. PlanetsDirectory.js:
 
-      *IMPORTS*
+       *IMPORTS*
               In  React, useState, and useEffect are imported from the 'react' library. Additionally, the PlanetCard component is imported from a local file named 'PlanetCard'.
 
-      *State Management*
+       *State Management*
                       Two state variables are initialized using the useState hook. planets will hold an array of planet data fetched from the API, and nextPage will hold the URL for the 
        next page of planet data.
 
-     *Fetching Data with useEffect*
+       *Fetching Data with useEffect*
             The useEffect hook is used here to perform side effects. In this case, it fetches the list of planets from the SWAPI when the component mounts. It only runs once 
        because of the empty dependency array ([]) as the second argument.
 
-    *Fetching Next Page*
+       *Fetching Next Page*
               This function(fetchNextPage) fetches the next page of planet data when called. It appends the new results to the existing planets array.
 
-    *Rendering*
+       *Rendering*
               1. Use maps through the planets array and renders a PlanetCard component for each planet.
               2. If nextPage exists (indicating there are more pages of data available), a button is rendered. When clicked, it calls fetchNextPage to fetch and display the next page of planet data.
 
-    *Exporting Component*
+       *Exporting Component*
                  The PlanetsDirectory component is exported as the default export of this module, making it available for use elsewhere in the application.
 
 3.PlanetCard.js:
@@ -52,4 +52,5 @@
 4.App.css:
           Now we use the style format for all the components that displayed on  App.css .
                                     *******************************************
+                                    
      Now this project will be run successfully.
